@@ -10,8 +10,14 @@
 &lt;p>我们建议您使用 &lt;a href="https://github.com/jetstack/cert-manager">Cert Manager&lt;/a> 管理 Webhook Server 的证书。如果集群中未部署 Cert Manager 可参考&lt;a href="https://cert-manager.io/docs/installation/kubernetes/">官方文档&lt;/a>进行安装，运行以下命令可以快速安装 Cert Manager：&lt;/p>
 &lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">&lt;span style="color:#8f5902;font-style:italic"># Kubernetes 1.16+&lt;/span>
 kubectl apply --validate&lt;span style="color:#ce5c00;font-weight:bold">=&lt;/span>&lt;span style="color:#204a87">false&lt;/span> -f https://github.com/jetstack/cert-manager/releases/download/v1.0.2/cert-manager.yaml
-&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="安装-kubediag">安装 KubeDiag&lt;/h2>
-&lt;p>运行下列命令可以快速安装 KubeDiag：&lt;/p>
+&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="使用-helm-安装-kubediag">使用 Helm 安装 KubeDiag&lt;/h2>
+&lt;p>您可以使用 Helm 进行安装，首先添加 Helm 仓库并更新：&lt;/p>
+&lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">helm repo add kubediag https://kubediag.github.io/kubediag-helm
+helm repo update
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>执行下列命令安装 KubeDiag：&lt;/p>
+&lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">helm install kubediag/kubediag-helm --create-namespace --generate-name --namespace kubediag
+&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="使用-kubectl-安装-kubediag">使用 Kubectl 安装 KubeDiag&lt;/h2>
+&lt;p>您也可以通过运行下列命令快速安装 KubeDiag：&lt;/p>
 &lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">kubectl create namespace kubediag
 kubectl apply -f https://raw.githubusercontent.com/kubediag/kubediag/master/config/deploy/manifests.yaml
 &lt;/code>&lt;/pre>&lt;/div>&lt;p>查看是否所有运行 KubeDiag 的 Pod 处于 Running 状态：&lt;/p>

@@ -24,9 +24,24 @@ KubeDiag 需要运行在满足下列条件的 Kubernetes 集群中：
 kubectl apply --validate=false -f https://github.com/jetstack/cert-manager/releases/download/v1.0.2/cert-manager.yaml
 ```
 
-## 安装 KubeDiag
+## 使用 Helm 安装 KubeDiag
 
-运行下列命令可以快速安装 KubeDiag：
+您可以使用 Helm 进行安装，首先添加 Helm 仓库并更新：
+
+```bash
+helm repo add kubediag https://kubediag.github.io/kubediag-helm
+helm repo update
+```
+
+执行下列命令安装 KubeDiag：
+
+```bash
+helm install kubediag/kubediag-helm --create-namespace --generate-name --namespace kubediag
+```
+
+## 使用 Kubectl 安装 KubeDiag
+
+您也可以通过运行下列命令快速安装 KubeDiag：
 
 ```bash
 kubectl create namespace kubediag

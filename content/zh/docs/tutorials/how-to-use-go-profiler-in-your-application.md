@@ -38,23 +38,30 @@ func main() {
 }
 ```
 
-运行这个应用，然后使用如下示例创建一个 Diagnosis 进行性能剖析。注意创建前修改你的 `<source-ip>` 与 `<node-name>`，其中 `<source-ip>` 是你的 Go 应用访问 IP，`<node-name>` 是运行了 KubeDiag Agent的节点 Name。
+运行这个应用，然后使用如下示例创建一个 Operationset 与 Diagnosis 进行性能剖析。注意创建前修改你的 `<source-ip>` 与 `<node-name>`，其中 `<source-ip>` 是你的 Go 应用访问 IP，`<node-name>` 是运行了 KubeDiag Agent的节点 Name。
 
 ```yaml
+apiVersion: diagnosis.kubediag.org/v1
+kind: OperationSet
+metadata:
+  name: go-profiler
+spec:
+  adjacencyList:
+  - id: 0
+    to:
+    - 1
+  - id: 1
+    operation: go-profiler
+---
 apiVersion: diagnosis.kubediag.org/v1
 kind: Diagnosis
 metadata:
   name: go-profiler
-spec:
-  source: Custom
-  profilers:
-  - name: go-profiler
-    type: InformationCollector
-    go:
-      source: <source-ip>:9090
-      type: Heap
-    timeoutSeconds: 60
-    expirationSeconds: 300
+spec: 
+  parameters:
+    param.diagnoser.runtime.go_profiler.type: Heap
+    param.diagnoser.runtime.go_profiler.source: <source-ip>:9090
+  operationSet: go-profiler
   nodeName: <node-name>
 ```
 
@@ -62,12 +69,9 @@ spec:
 
 ```yaml
 status:
-  profilers:
-  - endpoint: 10.0.2.15:45778
-    name: go-profiler
-    type: InformationCollector
-  recoverable: true
-  startTime: "2021-02-05T12:23:02Z"
+  operationResults:
+    diagnoser.runtime.go_profiler.result.endpoint: Visit http://10.0.2.15:45778,
+      this server will expire in 7200 seconds.
 ```
 
 ## 查看性能剖析结果

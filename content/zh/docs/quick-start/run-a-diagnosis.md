@@ -43,7 +43,7 @@ $ curl -X POST --data '{}' http://10.96.73.28:80
 通过创建上述 Diagnosis 运行诊断：
 
 ```bash
-kubectl apply -f samples/http-operation/manifests/diagnosis.yaml
+kubectl apply -f https://raw.githubusercontent.com/kubediag/kubediag/master/samples/http-operation/manifests/diagnosis.yaml
 ```
 
 查看 Diagnosis 的状态：

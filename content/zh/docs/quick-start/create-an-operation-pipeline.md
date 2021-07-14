@@ -33,7 +33,7 @@ OperationSet 中的 `.spec.adjacencyList` 字段包含了一个有向无环图�
 通过创建上述 OperationSet 注册诊断流水线：
 
 ```bash
-kubectl apply -f samples/http-operation/manifests/operationset.yaml
+kubectl apply -f https://raw.githubusercontent.com/kubediag/kubediag/master/samples/http-operation/manifests/operationset.yaml
 ```
 
 查看 OperationSet 的状态：

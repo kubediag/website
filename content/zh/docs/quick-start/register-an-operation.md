@@ -127,8 +127,8 @@ spec:
 创建运行该程序的 Pod 以及用于访问的 Service：
 
 ```bash
-kubectl apply -f samples/http-operation/manifests/pod.yaml
-kubectl apply -f samples/http-operation/manifests/service.yaml
+kubectl apply -f https://raw.githubusercontent.com/kubediag/kubediag/master/samples/http-operation/manifests/pod.yaml
+kubectl apply -f https://raw.githubusercontent.com/kubediag/kubediag/master/samples/http-operation/manifests/service.yaml
 ```
 
 该程序启动了一个 HTTP 服务器并初始化了内容如下的缓存：
@@ -181,5 +181,5 @@ spec:
 创建用于注册诊断操作的 Operation：
 
 ```bash
-kubectl apply -f samples/http-operation/manifests/operation.yaml
+kubectl apply -f https://raw.githubusercontent.com/kubediag/kubediag/master/samples/http-operation/manifests/operation.yaml
 ```

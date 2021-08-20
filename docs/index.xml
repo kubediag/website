@@ -1,4 +1,4 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>KubeDiag – 欢迎使用 KubeDiag</title><link>https://kubediag.github.io/website/docs/</link><description>Recent content in 欢迎使用 KubeDiag on KubeDiag</description><generator>Hugo -- gohugo.io</generator><atom:link href="https://kubediag.github.io/website/docs/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs: 命令行工具</title><link>https://kubediag.github.io/website/docs/references/component-tool/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kubediag.github.io/website/docs/references/component-tool/</guid><description>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>– 欢迎使用 KubeDiag</title><link>https://kubediag.org/docs/</link><description>Recent content in 欢迎使用 KubeDiag on</description><generator>Hugo -- gohugo.io</generator><atom:link href="https://kubediag.org/docs/index.xml" rel="self" type="application/rss+xml"/><item><title>Docs: 命令行工具</title><link>https://kubediag.org/docs/references/component-tool/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kubediag.org/docs/references/component-tool/</guid><description>
 &lt;p>命令行工具 &lt;code>kubediag&lt;/code> 可以用于启动 Master 和 Agent 组件。Master 在整个框架中负责控制诊断运维流水线的生成以及诊断的触发。Agent 负责诊断的实际执行。&lt;/p>
 &lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">kubediag &lt;span style="color:#ce5c00;font-weight:bold">[&lt;/span>flags&lt;span style="color:#ce5c00;font-weight:bold">]&lt;/span>
 &lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="参数">参数&lt;/h2>
@@ -121,7 +121,7 @@
 &lt;td>/var/lib/kubediag&lt;/td>
 &lt;/tr>
 &lt;/tbody>
-&lt;/table></description></item><item><title>Docs: 安装</title><link>https://kubediag.github.io/website/docs/quick-start/installation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kubediag.github.io/website/docs/quick-start/installation/</guid><description>
+&lt;/table></description></item><item><title>Docs: 安装</title><link>https://kubediag.org/docs/quick-start/installation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kubediag.org/docs/quick-start/installation/</guid><description>
 &lt;p>欢迎！在学习如何使用 KubeDiag 来编排诊断运维操作前，您首先需要在 Kubernetes 集群中安装 KubeDiag。&lt;/p>
 &lt;h2 id="系统要求">系统要求&lt;/h2>
 &lt;p>KubeDiag 需要运行在满足下列条件的 Kubernetes 集群中：&lt;/p>
@@ -151,7 +151,7 @@ kubediag-agent-4m8kd 1/1 Running 0 9s
 kubediag-agent-d4k5x 1/1 Running 0 10s
 kubediag-agent-hs22s 1/1 Running 0 10s
 kubediag-master-67cd58cfdc-djgtb 1/1 Running 0 12s
-&lt;/code>&lt;/pre></description></item><item><title>Docs: 架构</title><link>https://kubediag.github.io/website/docs/concepts/architecture/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kubediag.github.io/website/docs/concepts/architecture/</guid><description>
+&lt;/code>&lt;/pre></description></item><item><title>Docs: 架构</title><link>https://kubediag.org/docs/concepts/architecture/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kubediag.org/docs/concepts/architecture/</guid><description>
 &lt;p>KubeDiag 是一个用于编排诊断运维操作的框架，主要由 KubeDiag Master 和 KubeDiag Agent 两个部分组成。KubeDiag Master 主要负责下列工作：&lt;/p>
 &lt;ul>
 &lt;li>基于 OperationSet 计算出所有的诊断运维路径。&lt;/li>
@@ -175,7 +175,7 @@ kubediag-master-67cd58cfdc-djgtb 1/1 Running 0 12s
 &lt;p>KubeDiag Agent 主要由执行器组成：&lt;/p>
 &lt;ul>
 &lt;li>执行器（Executor）负责执行诊断运维路径中的操作并将运维操作的结果和执行的状况更新至 Diagnosis 的 Status 中。&lt;/li>
-&lt;/ul></description></item><item><title>Docs: 通过 Prometheus 报警触发诊断</title><link>https://kubediag.github.io/website/docs/tutorials/trigger-diagnoses-by-prometheus-alerts/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kubediag.github.io/website/docs/tutorials/trigger-diagnoses-by-prometheus-alerts/</guid><description>
+&lt;/ul></description></item><item><title>Docs: 通过 Prometheus 报警触发诊断</title><link>https://kubediag.org/docs/tutorials/trigger-diagnoses-by-prometheus-alerts/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kubediag.org/docs/tutorials/trigger-diagnoses-by-prometheus-alerts/</guid><description>
 &lt;p>本文介绍了如何通过 Prometheus 报警创建 Diagnosis 来触发诊断。&lt;/p>
 &lt;h2 id="开始之前">开始之前&lt;/h2>
 &lt;p>在教程开始前，您需要确定 Kubernetes 集群中已经正确安装 KubeDiag。&lt;/p>
@@ -276,7 +276,7 @@ severity=&amp;quot;warning&amp;quot;
 &lt;li>Trigger 的 &lt;code>.spec.sourceTemplate.prometheusAlertTemplate.podNamespaceReferenceLabel&lt;/code> 为 &lt;code>namespace&lt;/code>，而 NodeClockNotSynchronising 报警消息中包含 &lt;code>namespace=&amp;quot;monitoring&amp;quot;&lt;/code> 标签，该标签的值 &lt;code>monitoring&lt;/code> 与 Diagnosis 的 &lt;code>.spec.podReference.namespace&lt;/code> 一致。&lt;/li>
 &lt;li>Trigger 的 &lt;code>.spec.sourceTemplate.prometheusAlertTemplate.containerReferenceLabel&lt;/code> 为 &lt;code>container&lt;/code>，而 NodeClockNotSynchronising 报警消息中包含 &lt;code>pod=&amp;quot;node-exporter-2vqfp&amp;quot;&lt;/code> 标签，该标签的值 &lt;code>node-exporter-2vqfp&lt;/code> 与 Diagnosis 的 &lt;code>.spec.podReference.container&lt;/code> 一致。&lt;/li>
 &lt;li>Trigger 的 &lt;code>.spec.sourceTemplate.prometheusAlertTemplate.parameterInjectionLabels&lt;/code> 是一个列表，该列表包含了需要注入 Diagnosis 中报警标签的键并且与 Diagnosis 的 &lt;code>.spec.parameters&lt;/code> 一致。&lt;/li>
-&lt;/ul></description></item><item><title>Docs: 注册运维操作</title><link>https://kubediag.github.io/website/docs/quick-start/register-an-operation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kubediag.github.io/website/docs/quick-start/register-an-operation/</guid><description>
+&lt;/ul></description></item><item><title>Docs: 注册运维操作</title><link>https://kubediag.org/docs/quick-start/register-an-operation/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kubediag.org/docs/quick-start/register-an-operation/</guid><description>
 &lt;p>现在让我们将诊断操作注册到集群中。&lt;/p>
 &lt;h2 id="撰写一个简单的诊断操作">撰写一个简单的诊断操作&lt;/h2>
 &lt;p>下列是一个通过 HTTP 服务器的形式提供运维操作的简单示例：&lt;/p>
@@ -407,7 +407,7 @@ http-operation ClusterIP 10.96.73.28 &amp;lt;none&amp;gt; 80/TCP 18s
 &lt;/span>&lt;span style="color:#f8f8f8;text-decoration:underline"> &lt;/span>&lt;span style="color:#204a87;font-weight:bold">timeoutSeconds&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span>&lt;span style="color:#f8f8f8;text-decoration:underline"> &lt;/span>&lt;span style="color:#0000cf;font-weight:bold">30&lt;/span>&lt;span style="color:#f8f8f8;text-decoration:underline">
 &lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>创建用于注册诊断操作的 Operation：&lt;/p>
 &lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">kubectl apply -f https://raw.githubusercontent.com/kubediag/kubediag/master/samples/http-operation/manifests/operation.yaml
-&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Docs: 通过 Kafka 消息触发诊断</title><link>https://kubediag.github.io/website/docs/tutorials/trigger-diagnoses-by-kafka-message/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kubediag.github.io/website/docs/tutorials/trigger-diagnoses-by-kafka-message/</guid><description>
+&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Docs: 通过 Kafka 消息触发诊断</title><link>https://kubediag.org/docs/tutorials/trigger-diagnoses-by-kafka-message/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kubediag.org/docs/tutorials/trigger-diagnoses-by-kafka-message/</guid><description>
 &lt;p>本文介绍了如何通过 Kafka 消息创建 Diagnosis 来触发诊断。&lt;/p>
 &lt;h2 id="开始之前">开始之前&lt;/h2>
 &lt;p>在教程开始前，您需要确定 Kubernetes 集群中已经正确安装 KubeDiag。&lt;/p>
@@ -517,7 +517,7 @@ http-operation ClusterIP 10.96.73.28 &amp;lt;none&amp;gt; 80/TCP 18s
 &lt;/span>&lt;span style="color:#f8f8f8;text-decoration:underline"> &lt;/span>&lt;span style="color:#204a87;font-weight:bold">container&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span>&lt;span style="color:#f8f8f8;text-decoration:underline"> &lt;/span>&lt;span style="color:#000">my-container&lt;/span>&lt;span style="color:#f8f8f8;text-decoration:underline">
 &lt;/span>&lt;span style="color:#f8f8f8;text-decoration:underline"> &lt;/span>&lt;span style="color:#204a87;font-weight:bold">name&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span>&lt;span style="color:#f8f8f8;text-decoration:underline"> &lt;/span>&lt;span style="color:#000">my-pod&lt;/span>&lt;span style="color:#f8f8f8;text-decoration:underline">
 &lt;/span>&lt;span style="color:#f8f8f8;text-decoration:underline"> &lt;/span>&lt;span style="color:#204a87;font-weight:bold">namespace&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span>&lt;span style="color:#f8f8f8;text-decoration:underline"> &lt;/span>&lt;span style="color:#000">default&lt;/span>&lt;span style="color:#f8f8f8;text-decoration:underline">
-&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Docs: 创建运维流水线</title><link>https://kubediag.github.io/website/docs/quick-start/create-an-operation-pipeline/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kubediag.github.io/website/docs/quick-start/create-an-operation-pipeline/</guid><description>
+&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Docs: 创建运维流水线</title><link>https://kubediag.org/docs/quick-start/create-an-operation-pipeline/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kubediag.org/docs/quick-start/create-an-operation-pipeline/</guid><description>
 &lt;p>我们可以对已注册的诊断操作进行编排以组成运维流水线，现在让我们将之前注册的诊断操作制作成流水线。&lt;/p>
 &lt;h2 id="编写运维流水线">编写运维流水线&lt;/h2>
 &lt;p>OperationSet 是用于声明诊断流水线的自定义资源，通过 OperationSet 您可以定义诊断流水线中需要执行的诊断操作。下列 OperationSet 中定义了一个包含之前已注册诊断操作的诊断流水线：&lt;/p>
@@ -558,7 +558,7 @@ paths:
 - - id: &lt;span style="color:#0000cf;font-weight:bold">1&lt;/span>
 operation: http-operation
 ready: &lt;span style="color:#204a87">true&lt;/span>
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>您可能已经注意到 &lt;code>.status.ready&lt;/code> 字段为 &lt;code>true&lt;/code> 并且 &lt;code>.status.paths&lt;/code> 字段中包含一条诊断路径，该状态表示 OperationSet 被 KubeDiag 成功接受。&lt;/p></description></item><item><title>Docs: 剖析 Go 应用的性能</title><link>https://kubediag.github.io/website/docs/tutorials/how-to-use-go-profiler-in-your-application/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kubediag.github.io/website/docs/tutorials/how-to-use-go-profiler-in-your-application/</guid><description>
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>您可能已经注意到 &lt;code>.status.ready&lt;/code> 字段为 &lt;code>true&lt;/code> 并且 &lt;code>.status.paths&lt;/code> 字段中包含一条诊断路径，该状态表示 OperationSet 被 KubeDiag 成功接受。&lt;/p></description></item><item><title>Docs: 剖析 Go 应用的性能</title><link>https://kubediag.org/docs/tutorials/how-to-use-go-profiler-in-your-application/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kubediag.org/docs/tutorials/how-to-use-go-profiler-in-your-application/</guid><description>
 &lt;p>本教程介绍如何修改 Go 应用以捕获性能剖析数据，并查看剖析数据。&lt;/p>
 &lt;h2 id="教程目标">教程目标&lt;/h2>
 &lt;p>阅读本教程后，你将熟悉以下内容：&lt;/p>
@@ -607,7 +607,7 @@ ready: &lt;span style="color:#204a87">true&lt;/span>
 &lt;/span>&lt;span style="color:#f8f8f8;text-decoration:underline"> &lt;/span>&lt;span style="color:#204a87;font-weight:bold">diagnoser.runtime.go_profiler.result.endpoint&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span>&lt;span style="color:#f8f8f8;text-decoration:underline"> &lt;/span>&lt;span style="color:#000">Visit http://10.0.2.15:45778,&lt;/span>&lt;span style="color:#f8f8f8;text-decoration:underline">
 &lt;/span>&lt;span style="color:#f8f8f8;text-decoration:underline"> &lt;/span>&lt;span style="color:#000">this server will expire in 7200 seconds.&lt;/span>&lt;span style="color:#f8f8f8;text-decoration:underline">
 &lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="查看性能剖析结果">查看性能剖析结果&lt;/h2>
-&lt;p>在浏览器中打开 &lt;code>10.0.2.15:45778&lt;/code>，显示 Profiler 界面，即可查看此应用的堆分析结果与火焰图等。&lt;/p></description></item><item><title>Docs: 如何使用 Go Profiler 剖析 APIServer</title><link>https://kubediag.github.io/website/docs/tutorials/how-to-profiler-apiserver/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kubediag.github.io/website/docs/tutorials/how-to-profiler-apiserver/</guid><description>
+&lt;p>在浏览器中打开 &lt;code>10.0.2.15:45778&lt;/code>，显示 Profiler 界面，即可查看此应用的堆分析结果与火焰图等。&lt;/p></description></item><item><title>Docs: 如何使用 Go Profiler 剖析 APIServer</title><link>https://kubediag.org/docs/tutorials/how-to-profiler-apiserver/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kubediag.org/docs/tutorials/how-to-profiler-apiserver/</guid><description>
 &lt;p>在本教程中，你将部署一个配置为收集性能剖析文件数据的 Go 应用剖析集群的 APIServer，并将使用浏览器界面查看性能剖析文件数据。&lt;/p>
 &lt;h2 id="准备工作">准备工作&lt;/h2>
 &lt;p>在教程开始前，您需要确定 kubernetes 集群中已经正确安装 KubeDiag，并且确认有以下资源&lt;/p>
@@ -678,7 +678,7 @@ kubectl apply -f https://raw.githubusercontent.com/kubediag/kubediag/master/conf
 &lt;/span>&lt;span style="color:#f8f8f8;text-decoration:underline"> &lt;/span>&lt;span style="color:#204a87;font-weight:bold">diagnoser.runtime.go_profiler.result.endpoint&lt;/span>&lt;span style="color:#000;font-weight:bold">:&lt;/span>&lt;span style="color:#f8f8f8;text-decoration:underline"> &lt;/span>&lt;span style="color:#000">Visit http://10.0.2.15:39941,&lt;/span>&lt;span style="color:#f8f8f8;text-decoration:underline">
 &lt;/span>&lt;span style="color:#f8f8f8;text-decoration:underline"> &lt;/span>&lt;span style="color:#000">this server will expire in 7200 seconds.&lt;/span>&lt;span style="color:#f8f8f8;text-decoration:underline">
 &lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="查看性能剖析结果">查看性能剖析结果&lt;/h2>
-&lt;p>在浏览器中打开 &lt;code>10.0.2.15:45771&lt;/code>，显示 Profiler 界面，即可查看 APIServer 的堆分析结果与火焰图等。&lt;/p></description></item><item><title>Docs: 运行一次诊断</title><link>https://kubediag.github.io/website/docs/quick-start/run-a-diagnosis/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kubediag.github.io/website/docs/quick-start/run-a-diagnosis/</guid><description>
+&lt;p>在浏览器中打开 &lt;code>10.0.2.15:45771&lt;/code>，显示 Profiler 界面，即可查看 APIServer 的堆分析结果与火焰图等。&lt;/p></description></item><item><title>Docs: 运行一次诊断</title><link>https://kubediag.org/docs/quick-start/run-a-diagnosis/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kubediag.org/docs/quick-start/run-a-diagnosis/</guid><description>
 &lt;p>运维流水线已经准备就绪，我们现在可以运行流水线中定义的诊断。&lt;/p>
 &lt;h2 id="编写诊断">编写诊断&lt;/h2>
 &lt;p>Diagnosis 是用于声明诊断的自定义资源，通过 Diagnosis 您可以定义如何运行一个诊断。下列 Diagnosis 中定义运行之前已注册运维流水线的诊断：&lt;/p>
@@ -757,4 +757,4 @@ operation: http-operation
 &lt;p>我们通过下列命令可以确定当前诊断程序缓存中的所有数据与 &lt;code>.status.operationResults&lt;/code> 字段一致：&lt;/p>
 &lt;div class="highlight">&lt;pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&lt;code class="language-bash" data-lang="bash">$ curl -X POST --data &lt;span style="color:#4e9a06">&amp;#39;{}&amp;#39;&lt;/span> http://10.96.73.28:80
 &lt;span style="color:#ce5c00;font-weight:bold">{&lt;/span>&lt;span style="color:#4e9a06">&amp;#34;a&amp;#34;&lt;/span>:&lt;span style="color:#4e9a06">&amp;#34;100&amp;#34;&lt;/span>,&lt;span style="color:#4e9a06">&amp;#34;b&amp;#34;&lt;/span>:&lt;span style="color:#4e9a06">&amp;#34;200&amp;#34;&lt;/span>,&lt;span style="color:#4e9a06">&amp;#34;c&amp;#34;&lt;/span>:&lt;span style="color:#4e9a06">&amp;#34;3&amp;#34;&lt;/span>,&lt;span style="color:#4e9a06">&amp;#34;d&amp;#34;&lt;/span>:&lt;span style="color:#4e9a06">&amp;#34;4&amp;#34;&lt;/span>,&lt;span style="color:#4e9a06">&amp;#34;diagnosis.name&amp;#34;&lt;/span>:&lt;span style="color:#4e9a06">&amp;#34;http-operation&amp;#34;&lt;/span>,&lt;span style="color:#4e9a06">&amp;#34;diagnosis.namespace&amp;#34;&lt;/span>:&lt;span style="color:#4e9a06">&amp;#34;default&amp;#34;&lt;/span>,&lt;span style="color:#4e9a06">&amp;#34;diagnosis.uid&amp;#34;&lt;/span>:&lt;span style="color:#4e9a06">&amp;#34;59f1aee9-e00c-4680-92c3-d1cee080f8dc&amp;#34;&lt;/span>,&lt;span style="color:#4e9a06">&amp;#34;e&amp;#34;&lt;/span>:&lt;span style="color:#4e9a06">&amp;#34;5&amp;#34;&lt;/span>,&lt;span style="color:#4e9a06">&amp;#34;f&amp;#34;&lt;/span>:&lt;span style="color:#4e9a06">&amp;#34;6&amp;#34;&lt;/span>,&lt;span style="color:#4e9a06">&amp;#34;node&amp;#34;&lt;/span>:&lt;span style="color:#4e9a06">&amp;#34;my-node&amp;#34;&lt;/span>&lt;span style="color:#ce5c00;font-weight:bold">}&lt;/span>
-&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Docs: 下一步</title><link>https://kubediag.github.io/website/docs/quick-start/what-next/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kubediag.github.io/website/docs/quick-start/what-next/</guid><description/></item><item><title>Docs:</title><link>https://kubediag.github.io/website/docs/develop-with-kube-diagnoser/develop-an-operation-processor/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kubediag.github.io/website/docs/develop-with-kube-diagnoser/develop-an-operation-processor/</guid><description/></item><item><title>Docs:</title><link>https://kubediag.github.io/website/docs/develop-with-kube-diagnoser/orchestrate-operations-to-a-pipeline/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kubediag.github.io/website/docs/develop-with-kube-diagnoser/orchestrate-operations-to-a-pipeline/</guid><description/></item></channel></rss>
+&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Docs: 下一步</title><link>https://kubediag.org/docs/quick-start/what-next/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kubediag.org/docs/quick-start/what-next/</guid><description/></item><item><title>Docs:</title><link>https://kubediag.org/docs/develop-with-kube-diagnoser/develop-an-operation-processor/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kubediag.org/docs/develop-with-kube-diagnoser/develop-an-operation-processor/</guid><description/></item><item><title>Docs:</title><link>https://kubediag.org/docs/develop-with-kube-diagnoser/orchestrate-operations-to-a-pipeline/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://kubediag.org/docs/develop-with-kube-diagnoser/orchestrate-operations-to-a-pipeline/</guid><description/></item></channel></rss>

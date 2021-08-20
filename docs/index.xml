@@ -162,7 +162,7 @@ kubediag-master-67cd58cfdc-djgtb 1/1 Running 0 12s
 &lt;li>执行 OperationSet 中的诊断运维路径并记录执行的状况。&lt;/li>
 &lt;li>将运维操作的结果记录到 Diagnosis 中。&lt;/li>
 &lt;/ul>
-&lt;p>&lt;img src="../images/kubediag-architecture.png" alt="Architecture">&lt;/p>
+&lt;p>&lt;img src="https://raw.githubusercontent.com/kubediag/kubediag/master/docs/images/kubediag-architecture.png" alt="Architecture">&lt;/p>
 &lt;h2 id="master">Master&lt;/h2>
 &lt;p>KubeDiag Master 主要由图构建器、Prometheus 报警管理器、Kafka 消息管理器和事件管理器组成：&lt;/p>
 &lt;ul>

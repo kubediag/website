@@ -16,7 +16,7 @@ KubeDiag Agent 主要负责下列工作：
 * 执行 OperationSet 中的诊断运维路径并记录执行的状况。
 * 将运维操作的结果记录到 Diagnosis 中。
 
-![Architecture](../images/kubediag-architecture.png)
+![Architecture](https://raw.githubusercontent.com/kubediag/kubediag/master/docs/images/kubediag-architecture.png)
 
 ## Master
 

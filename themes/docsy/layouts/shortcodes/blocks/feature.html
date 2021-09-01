@@ -1,0 +1,14 @@
+{{ $icon := .Get "icon" | default "fa-lightbulb" -}}
+{{ $url_text := .Get "url_text" -}}
+<div class="col-lg-4 mb-5 mb-lg-0 text-left">
+<div class="mb-4 h1">
+  <img class="custom-imgicon" width="36" height="36" src="./img/icon_footer_{{ $icon }}@2x.png" alt="">
+</div>
+<h4 class="h3">
+  {{- .Get "title" | markdownify -}}
+</h4>
+<div class="mb-0 colorharf">
+{{ .Inner }}
+</div>
+<!--{{ with .Get "url" }}<p><a href="{{ . }}">{{ with $url_text }}{{ $url_text }}{{ else }}{{ T "ui_read_more" }}{{ end }} …</a></p>{{ end }}-->
+</div>

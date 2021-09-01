@@ -1,0 +1,115 @@
++++
+title = "kubediag"
+linkTitle = "kubediag"
++++
+
+{{< blocks/cover title="自动诊断 KubeDiag" image_anchor="top" height="640" color="white" >}}
+<div class="mx-auto">
+	<p class="lead">KubeDiag 是一套 Kubernetes 集群运维诊断的编排框架。通过流水线自定义编排 Kubernetes 资源，实现运维诊断自动化，提高集群诊断和故障运维工作效率。</p>
+	<a class="btn btn-lg btn-primary mr-3 red-button" href="{{< relref "/docs/quick-start/" >}}">
+	快速开始 <i class="fas fa-arrow-alt-circle-right ml-2"></i>
+	</a>
+	<a class="btn btn-lg btn-secondary black-button" href="https://github.com/kubediag/kubediag/releases">
+		下载 <i class="fab fa-github ml-2 "></i>
+	</a>
+<!--	{{< blocks/link-down color="info" >}}-->
+</div>
+{{< /blocks/cover >}}
+
+
+{{< blocks/contents title="产品能力" direction="row" color="#ffffff">}}
+{{% blocks/content icon="1" title="流水线编排" %}}
+云原生运维流水线编排能力
+{{% /blocks/content %}}
+{{% blocks/content icon="2" title="故障诊断恢复" %}}
+基于成熟经验的集群故障诊断以及恢复功能
+{{% /blocks/content %}}
+{{% blocks/content icon="3" title="报警自动处理" %}}
+通过自定义流水线对已触发的Prometheus 报警进行自动处理
+{{% /blocks/content %}}
+{{% blocks/content icon="4" title="职责界定" %}}
+通过声明式 API 明确运维和研发团队之间的职责边界
+{{% /blocks/content %}}
+{{% blocks/content icon="5" title="保障能力交付" %}}
+通过平台化的手段交付团队 沉淀的稳定性保障能力
+{{% /blocks/content %}}
+{{< /blocks/contents >}}
+
+<!-- 图片要求600*330 位置 themes/docsy/static/img/logo1.png-->
+{{< blocks/contents title="模块标题" direction="column" color="#F7F8FA">}}
+{{% blocks/colume layout="right" title="运维诊断自动化" question="在云原生场景下处理运维问题时，诊断信息采集、运维操作均有一定的时效性且运维成本较高" answer="用户可自定义集群诊断和故障运维等操作，利用编排工具定义诊断运维流水线，并通过报警自动触发，实现运维诊断自动化流程。"%}}
+<img width="600" height="330" src="./img/logo1.png" alt="">
+{{% /blocks/colume %}}
+{{% blocks/colume layout="left" title="操作流程规范化" question="故障处理安全稳定难以保证" answer="使用平台统一管理集群诊断及故障运维，将零散的操作整理编排成规范化的诊断运维流水线。"%}}
+<img width="600" height="330" src="./img/logo1.png" alt="">
+{{% /blocks/colume %}}
+{{% blocks/colume layout="right" title="诊断经验代码化" question="售后技术支持成本高，运维时产品稳定性评估难" answer="通过平台积累与沉淀经验，实现运维诊断经验的代码化/能力化。项目已累积x条自动诊断操作。"%}}
+<img width="600" height="330" src="./img/logo1.png" alt="">
+{{% /blocks/colume %}}
+{{< /blocks/contents >}}
+
+{{< blocks/contents title="产品优势" direction="row" color="#ffffff">}}
+{{% blocks/content icon="6" title="开放" %}}
+组件式产品架构，开放的 API 集成能力
+{{% /blocks/content %}}
+{{% blocks/content icon="7" title="开源" %}}
+源于开源，强于开源，核心技术自主可控
+{{% /blocks/content %}}
+{{% blocks/content icon="8" title="成熟" %}}
+继承网易 21 年运维实践经验
+{{% /blocks/content %}}
+{{< /blocks/contents >}}
+
+<!-- 图片要求200*88 位置 themes/docsy/static/img/logo1.png-->
+{{< blocks/contents title="接入客户" color="#F7F8FA" style="padding-bottom:76px">}}
+{{% blocks/item %}}
+<img src="./img/logo1.png" alt="">
+{{% /blocks/item %}}
+{{% blocks/item %}}
+<img src="./img/logo1.png" alt="">
+{{% /blocks/item %}}
+{{% blocks/item %}}
+<img src="./img/logo1.png" alt="">
+{{% /blocks/item %}}
+{{% blocks/item %}}
+<img src="./img/logo1.png" alt="">
+{{% /blocks/item %}}
+{{% blocks/item %}}
+<img src="./img/logo1.png" alt="">
+{{% /blocks/item %}}
+{{% blocks/item %}}
+<img src="./img/logo1.png" alt="">
+{{% /blocks/item %}}
+{{% blocks/item %}}
+<img src="./img/logo1.png" alt="">
+{{% /blocks/item %}}
+{{% blocks/item %}}
+<img src="./img/logo1.png" alt="">
+{{% /blocks/item %}}
+{{% blocks/item %}}
+<img src="./img/logo1.png" alt="">
+{{% /blocks/item %}}
+{{% blocks/item %}}
+<img src="./img/logo1.png" alt="">
+{{% /blocks/item %}}
+
+{{< /blocks/contents >}}
+
+{{< blocks/section color="dark" type="features">}}
+{{% blocks/feature icon="logo" title="了解 KubeDiag 中的概念" url="/docs/examples/" %}}
+帮助您了解 KubeDiag 的各个组成部分以及 KubeDiag 用来表诊断运维流程的一些抽象概念，并帮助您更加深入的理解 KubeDiag 是如何工作的。
+{{% /blocks/feature %}}
+
+
+{{% blocks/feature icon="github" title="欢迎贡献" url="https://github.com/google/docsy" %}}
+我们采用 [Pull Request](https://github.com/kubediag/kubediag/pulls) 的形式在 GitHub 上进行工作。欢迎新用户的加入！
+{{% /blocks/feature %}}
+
+
+{{% blocks/feature icon="file" title="帮助我们改进文档" url="https://twitter.com/docsydocs" %}}
+该文档的所有内容均托管在 GitHub 上。如果您在使用文档的过程中发现任何问题，欢迎您为我们提出宝贵的建议。
+{{% /blocks/feature %}}
+
+
+{{< /blocks/section >}}
+

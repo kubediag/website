@@ -1,0 +1,375 @@
+@import "support/functions";
+@import "variables_project";
+@import "variables";
+@import "support/mixins";
+
+@import "../vendor/bootstrap/scss/bootstrap";
+
+@import "../vendor/Font-Awesome/scss/fontawesome.scss";
+@import "../vendor/Font-Awesome/scss/solid.scss";
+@import "../vendor/Font-Awesome/scss/brands.scss";
+
+@import "support/utilities";
+@import "colors";
+@import "boxes";
+@import "blog";
+@import "code";
+@import "nav";
+@import "sidebar-tree";
+@import "sidebar-toc";
+@import "buttons";
+@import "breadcrumb";
+@import "alerts";
+@import "content";
+@import "search";
+@import "main-container";
+@import "blocks/blocks";
+@import "section-index";
+@import "pageinfo";
+@import "taxonomy";
+
+@if $td-enable-google-fonts {
+  @import url($web-font-path);
+}
+
+footer {
+  min-height: 150px;
+
+  @include media-breakpoint-down(md) {
+    min-height: 200px;
+  }
+}
+
+// Adjust anchors vs the fixed menu.
+@include media-breakpoint-up(md) {
+  .td-offset-anchor:target {
+    display: block;
+    position: relative;
+    top: -4rem;
+    visibility: hidden;
+  }
+
+  h2[id]:before,
+  h3[id]:before,
+  h4[id]:before,
+  h5[id]:before {
+    display: block;
+    content: " ";
+    margin-top: -5rem;
+    height: 5rem;
+    visibility: hidden;
+  }
+}
+
+@import "rtl/main";
+@import "styles_project";
+
+.navbar-logo {
+  display: inline-block;
+  width: 160px;
+  height: 36px;
+  background-image: url("/logo.png");
+  background-size: 160px 36px;
+  vertical-align: middle;
+}
+
+@media (min-width: 1200px) {
+  .container, .container-sm, .container-md, .container-lg, .container-xl {
+    max-width: 1200px;
+  }
+}
+
+.lead {
+  max-width: 584px;
+  font-size: 16px;
+  text-align: left;
+  letter-spacing: 1px;
+  margin-bottom: 48px;
+}
+
+.site-title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 80px;
+}
+
+.red-button {
+  width: 188px;
+  height: 52px;
+  background: #E54545;
+  border-radius: 6px;
+  border: 0;
+  line-height: 35px;
+}
+
+.black-button {
+  width: 188px;
+  height: 52px;
+  background: #222222;
+  border-radius: 6px;
+  border: 0;
+  line-height: 35px;
+}
+
+.-bg-white {
+  background-color: #f3f3f3;
+}
+
+footer {
+  min-height: 40px;
+}
+
+.flex1 {
+  flex: 1;
+}
+
+.disflex {
+  display: flex;
+  justify-content: center;
+  width: 1200px;
+  margin: auto;
+  flex-wrap: wrap;
+}
+
+.disflex.column {
+  flex-direction: column;
+}
+
+.custom-container {
+  min-height: 524px;
+  text-align: center;
+  padding: 0;
+}
+
+.contents-title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 40px;
+  color: #222222;
+  padding: 80px 0 56px;
+}
+
+.content-item {
+  height: 272px;
+  margin: 0 10px;
+}
+
+.content-icon {
+  height: 100px;
+  width: 100px;
+  font-size: 60px;
+  margin: auto;
+  outline: 2px dashed #e5e5e5;
+  color: red;
+}
+
+.content-title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 28px;
+  color: #333333;
+  margin: 16px 0;
+}
+
+.content-text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: #666666;
+}
+
+.colume-image {
+  width: 600px;
+  height: 330px;
+  background: #E1E1E1;
+  border-radius: 6px;
+}
+
+.colume-content {
+  width: 600px;
+  height: 330px;
+}
+
+.right .colume-image {
+  float: left;
+}
+
+.right .colume-content {
+  float: left;
+  padding-right: 79px;
+}
+
+.left .colume-image {
+  float: right;
+}
+
+.left .colume-content {
+  float: right;
+  padding: 0 25px 0 50px;
+}
+
+.colume-item {
+  margin-bottom: 82px;
+}
+
+.colume-title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 24px;
+  color: #333333;
+  padding: 56px 0 40px;
+}
+
+.question-label {
+  display: inline-block;
+  width: 80px;
+  height: 24px;
+  background: #3D3D40;
+  border-radius: 6px;
+  padding: 0px 8px;
+  color: #ffffff;
+}
+
+.answer-label {
+  display: inline-block;
+  width: 80px;
+  height: 24px;
+  background: #E54545;
+  border-radius: 6px;
+  padding: 0px 8px;
+  color: #ffffff;
+}
+
+.colume-info {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: #666666;
+}
+
+.item-content {
+  width: 220px;
+  height: 88px;
+  background: #FFFFFF;
+  border-radius: 6px;
+  margin: 12px;
+  display: flex;
+  vertical-align: middle;
+  text-align: center;
+  overflow: hidden;
+}
+
+.td-box--dark {
+  color: #fff;
+  background-color: #2B2B2B;
+}
+
+.btn-primary:hover {
+  color: rgb(255, 255, 255);
+  background: #ED7D7D;
+  border-color: #ED7D7D;
+}
+
+.btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active, .show > .btn-primary.dropdown-toggle {
+  color: #fff;
+  background-color: #ED7D7D;
+  border-color: #ED7D7D;
+}
+
+.btn-primary:focus, .btn-primary.focus {
+  color: #fff;
+  background: #ED7D7D;
+  border-color: #ED7D7D;
+  box-shadow: none;
+}
+
+.btn-secondary:hover {
+  color: #fff;
+  background: #3D3D40;
+  border-color: #3D3D40;
+}
+
+.btn-secondary:not(:disabled):not(.disabled):active, .btn-secondary:not(:disabled):not(.disabled).active, .show > .btn-secondary.dropdown-toggle {
+  color: #fff;
+  background-color: #3D3D40;
+  background-image: none;
+  border-color: #3D3D40;
+}
+
+.btn-secondary:focus, .btn-secondary.focus {
+  color: #fff;
+  background: #3D3D40;
+  border-color: #3D3D40;
+  box-shadow: none;
+}
+
+.bg-dark {
+  background: #2B2B2B !important;
+}
+
+.td-navbar .nav-link {
+  color: #000000 !important;
+  text-shadow: none !important;
+  font-weight: normal;
+}
+
+.colorharf {
+  opacity: 0.5;
+}
+
+.resizebg {
+  background-size: auto !important;
+  background-position: 50% 50% !important;
+}
+
+.footerresize {
+  white-space: nowrap;
+  color: #ffffff;
+  opacity: 0.5;
+}
+
+.custom-imgicon {
+  vertical-align: top;
+}
+
+.btn-secondary:not(:disabled):not(.disabled):active:focus, .btn-secondary:not(:disabled):not(.disabled).active:focus, .show > .btn-secondary.dropdown-toggle:focus {
+  box-shadow: none;
+}
+
+.td-sidebar {
+  padding-top: 6rem;
+}
+
+.td-sidebar-toc {
+  padding-top: 6rem;
+}
+
+.td-main main {
+  padding-top: 6rem;
+}
+
+.td-sidebar__inner {
+  top: 6rem;
+}
+.td-navbar {
+  border-bottom: 1px solid #e5e5e5;
+}
+@media (min-width: 768px) {
+  .navbar-bg-onscroll.td-navbar {
+    border-bottom: 1px solid #e5e5e5;
+  }
+  .td-navbar-cover {
+    border-bottom: 0;
+  }
+}
+
+
+
+.red-button {
+  color: #ffffff;
+}

@@ -1,0 +1,25 @@
+{{ $layout := .Get "layout" -}}
+{{ $title := .Get "title" -}}
+{{ $question := .Get "question" -}}
+{{ $answer := .Get "answer" -}}
+{{ $image := .Get "image" -}}
+<div class="flex1 text-left colume-item {{$layout}}">
+    <div class="colume-content">
+        <div class="colume-title">{{$title}}</div>
+        <div>
+            <table>
+                <tr>
+                    <td width="104"><span class="question-label">痛点描述</span></td>
+                    <td class="colume-info">{{$question}}</td>
+                </tr>
+                <tr>
+                    <td width="104"><span class="answer-label">方案描述</span></td>
+                    <td class="colume-info">{{$answer}}</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="colume-image">
+        {{ .Inner | htmlUnescape | safeHTML }}
+    </div>
+</div>

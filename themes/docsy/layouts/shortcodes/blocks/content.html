@@ -1,0 +1,15 @@
+{{ $icon := .Get "icon" -}}
+<div class="flex1 text-center content-item">
+    <div class="content-icon">
+        <img class="custom-imgicon" width="100" height="100" src="./img/icon_Property 1_0{{ $icon }}@2x.png" alt="">
+<!--        <embed src="./img/{{ $icon }}.svg" width="100" height="100"-->
+<!--               type="image/svg+xml"-->
+<!--               pluginspage="http://www.adobe.com/svg/viewer/install/" />-->
+    </div>
+    <div class="content-title">
+        {{- .Get "title" -}}
+    </div>
+    <div class="content-text">
+        {{ .Inner }}
+    </div>
+</div>

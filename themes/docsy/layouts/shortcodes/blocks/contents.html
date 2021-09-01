@@ -1,0 +1,9 @@
+{{ $direction := .Get "direction" -}}
+{{ $color := .Get "color" -}}
+{{ $style := .Get "style" -}}
+<div class="custom-container" style="background-color: {{ $color }};{{ $style }}">
+    <div class="contents-title">{{- .Get "title" -}}</div>
+    <div class="disflex {{ $direction }}">
+        {{ .Inner | htmlUnescape | safeHTML }}
+    </div>
+</div>

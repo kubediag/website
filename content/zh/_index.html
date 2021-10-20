@@ -3,7 +3,7 @@ title = "KubeDiag"
 linkTitle = "KubeDiag"
 +++
 
-{{< blocks/cover title="基于 Kubernetes 打造的诊断运维编排框架" image_anchor="top" height="full" color="orange" >}}
+{{< blocks/cover title="云原生诊断运维编排框架" image_anchor="top" height="full" color="orange" >}}
 <div class="mx-auto">
 	<a class="btn btn-lg btn-primary mr-3 mb-4" href="{{< relref "/docs/quick-start/" >}}">
 		快速开始 <i class="fas fa-arrow-alt-circle-right ml-2"></i>
@@ -12,14 +12,16 @@ linkTitle = "KubeDiag"
 		下载 <i class="fab fa-github ml-2 "></i>
 	</a>
 	<p class="lead mt-5">
-		通过 Kubernetes 提供的标准化能力，我们可以将开发人员和运维人员在问题诊断和故障运维工作中各自的职责界定清晰，并为集群中的诊断运维管理提供一套统一的编排框架。
+		通过 Kubernetes 提供的标准化能力，我们可以将问题诊断和故障运维工作中的专业经验进行沉淀，助力用户实现 DevOps 流程中监控、运维、诊断的全自动化管理以及场景化的交互式根因定位。
 	</p>
 	{{< blocks/link-down color="info" >}}
 </div>
 {{< /blocks/cover >}}
 
 {{% blocks/lead color="primary" %}}
-用户通过 Kubernetes 自定义资源可以定义运维操作、执行复杂的诊断运维流水线、通过报警自动触发诊断运维流水线。开发人员可以将精力聚焦在某个系统或业务问题的诊断逻辑编写上，而运维人员可以像搭建乐高一样通过编写自定义资源的方式将这些运维编排成流水线。
+经验即代码：诊断经验全部通过代码实现并通过标准化的方式集成到框架中，易于沉淀并复用。<br>
+自动化：用户可以像搭建乐高一样将运维编排成自动化流水线，流水线通过一键点击或自动触发执行。<br>
+可移植性：基于 Kubernetes Operator 实现，自动化诊断的功能可以在任意 Kubernetes 环境中运行。
 {{% /blocks/lead %}}
 
 {{< blocks/section color="dark" type="features">}}

@@ -105,7 +105,7 @@ metadata:
 spec:
   containers:
   - name: http-operation
-    image: hub.c.163.com/kubediag/http-operation:0.2.0
+    image: hub.c.163.com/kubediag/http-operation:v0.2.0
 ```
 
 ```yaml
@@ -171,10 +171,11 @@ metadata:
   name: http-operation
 spec:
   processor:
-    externalIP: http-operation.kubediag.svc.cluster.local
-    externalPort: 80
-    path: /
-    scheme: http
+    httpServer:
+      address: http-operation.kubediag.svc.cluster.local
+      port: 80
+      path: /
+      scheme: http
     timeoutSeconds: 30
 ```
 

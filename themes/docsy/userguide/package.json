@@ -1,0 +1,14 @@
+{
+  "scripts": {
+    "_build": "hugo --cleanDestinationDir -e dev -DFE --themesDir ../..",
+    "_serve": "hugo serve -b \"http://10.219.192.247:8080\" -p 8080 --bind \"0.0.0.0\" -DFE --themesDir ../..",
+    "build:preview": "hugo --cleanDestinationDir -e dev -DFE --minify --baseURL \"${DEPLOY_PRIME_URL:-/}\" --themesDir ../..",
+    "build:production": "hugo --cleanDestinationDir --minify --themesDir ../..",
+    "build": "npm run _build",
+    "serve": "npm run _serve"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.5.0",
+    "postcss-cli": "^5.0.1"
+  }
+}
